@@ -1,0 +1,12 @@
+<h4>{{ municipio }}</h4>
+<table class="table table-bordered table-condensed">
+	<tbody>
+		{% for autoridad in autoridades %}
+		<tr>
+			<td>{{ autoridad.cargo }}</td>
+			<td>{{ autoridad.nombre }}</td>
+			<td>{{ autoridad.partido }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
